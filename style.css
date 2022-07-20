@@ -1,12 +1,17 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+body{
+    font-family: 'Poppins', sans-serif;;
+}
+
 main{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+/* Top container styles  */
 .top-container{
     height: 646px;
     width: 1321px;
@@ -15,7 +20,6 @@ main{
     margin-top: 50px;
 }
 .text-header{
-    font: 'Poppins', sans-serif;
     color: white;
     height: 424px;
     width: 531px;
@@ -29,7 +33,6 @@ main{
 }
 .text-header p{
     font-size: 16px;
-    
 }
 .text-header button{
     background-color: #DD0000;
@@ -54,3 +57,96 @@ main{
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 50px;
 }
+
+/* Middle container styles  */
+.middle-container{
+    display: flex;
+    justify-content: center;
+    height: 646px;
+    width: 1321px;
+    
+    margin-top: 100px;
+}
+.match-updates{
+    background-color: black;
+    border-radius: 10px;
+    height: 312px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+.button-key{
+    height: 64px;
+    width: 252px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.match-schedule{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+.match-details h3{
+    text-align: center;
+    margin-top: 15px;
+}
+.transfer{
+    font-size: 16px;
+    height: 32px;
+    width: 100px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #161616;
+    margin-left: 20px;
+    
+}
+.game-time{
+    border: 2px solid #E8E8E8;
+    height: 362px;
+    width: 312px;
+    border-radius: 10px;
+}
+.match-icons{
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: rgb(78, 74, 74);
+    font-weight: 400;
+}
+.match-icons .fa-comment-o.text{
+    margin-left: 30px;
+}
+
+
+
+
+
+/* .match-updates{
+    height: 312px;
+    width: 312px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.all-buttons{
+    height: 252px;
+    width: 252px;
+    
+}
+.button-key{
+    height: 64px;
+    width: 252px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.middle-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 50px;
+} */
