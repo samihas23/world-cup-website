@@ -77,12 +77,17 @@ main{
     flex-direction: column;
     align-items: center;
     margin-right: 30px;
+    
 }
 .button-key{
     height: 64px;
     width: 252px;
     margin: 10px;
     border-radius: 10px;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
 }
 .match-schedule{
     display: grid;
