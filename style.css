@@ -1,0 +1,56 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-container{
+    height: 646px;
+    width: 1321px;
+    background-color: rgb(27, 25, 23);
+    border-radius: 30px;
+    margin-top: 50px;
+}
+.text-header{
+    font: 'Poppins', sans-serif;
+    color: white;
+    height: 424px;
+    width: 531px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.text-header h1{
+    font-weight: bold;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.text-header p{
+    font-size: 16px;
+    
+}
+.text-header button{
+    background-color: #DD0000;
+    height: 56px;
+    width: 187px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.text-header .fa-chevron-right.arrow{
+    margin-left: 5px;
+}
+.thumbnail img{
+    height: 613px;
+    width: 581;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.header-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 50px;
+}
