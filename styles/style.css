@@ -2,10 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 body{
-    font-family: 'Poppins', sans-serif;;
-}
+    font-family: 'Poppins', sans-serif;
 
-main{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -15,7 +13,7 @@ main{
 .top-container{
     height: 646px;
     width: 1321px;
-    background-color: rgb(27, 25, 23);
+    background-color: rgb(0, 0, 0);
     border-radius: 30px;
     margin-top: 50px;
 }
@@ -30,19 +28,55 @@ main{
     font-weight: bold;
     font-size: 70px;
     margin-bottom: 20px;
+    line-height: 80px;
+}
+
+/* Animated button styles  */
+.text-header button{
+    font-size: 20px;
+    background: #fa7575;
+    color: #fff;
+    border: 0.25rem solid #fa7575;
+    border-radius: 5px;
+    height: 57px;
+    width: 187px;
+}
+.text-header button:hover{
+    color: #fcfffd;
+}
+.text-header button::after{
+    content: "";
+    background: #ffdce1;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+}
+.text-header button[class^="slide"]::after {
+    transition: all 0.35s;
+}
+.text-header button[class^="slide"]:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+}
+.text-header button.slide_from_left::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+}
+.text-header a{
+    text-decoration: none;
+    color: white;
 }
 .text-header p{
     font-size: 16px;
+    margin-bottom: 30px;
 }
-.text-header button{
-    background-color: #DD0000;
-    height: 56px;
-    width: 187px;
-    border-radius: 5px;
-    color: white;
-    font-size: 20px;
-    margin-top: 10px;
-}
+
 .text-header .fa-chevron-right.arrow{
     margin-left: 5px;
 }
@@ -58,14 +92,23 @@ main{
     grid-row-gap: 50px;
 }
 
+
 /* Middle container styles  */
 .middle-container{
     display: flex;
     justify-content: center;
     height: 646px;
     width: 1321px;
-    
     margin-top: 100px;
+    margin-bottom: 650px;
+}
+.middle-container2{
+    display: flex;
+    justify-content: center;
+    height: 646px;
+    width: 1321px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .match-updates{
     background-color: black;
@@ -77,18 +120,22 @@ main{
     flex-direction: column;
     align-items: center;
     margin-right: 30px;
-    
 }
+.match-updates a{
+    text-decoration: none;
+}
+
 .button-key{
     height: 64px;
     width: 252px;
     margin: 10px;
     border-radius: 10px;
-}
-nav li a{
-    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
     color: black;
+    
 }
+
 .match-schedule{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -97,6 +144,10 @@ nav li a{
 .match-details h3{
     text-align: center;
     margin-top: 15px;
+}
+.flag-details{
+    text-align: center;
+    margin-top: 20px;
 }
 .transfer{
     font-size: 16px;
@@ -115,6 +166,12 @@ nav li a{
     width: 312px;
     border-radius: 10px;
 }
+.game-flag{
+    border: 2px solid #E8E8E8;
+    height: 242px;
+    width: 312px;
+    border-radius: 10px;
+}
 .match-icons{
     display: flex;
     margin-left: 20px;
@@ -125,33 +182,67 @@ nav li a{
 .match-icons .fa-comment-o.text{
     margin-left: 30px;
 }
-
-
-
-
-
-/* .match-updates{
-    height: 312px;
-    width: 312px;
-    background-color: black;
+.flag-image{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-
+    justify-content: space-evenly;
+    margin-top: 40px;
 }
-.all-buttons{
-    height: 252px;
-    width: 252px;
+
+/* footer styles  */
+footer{
+    height: 446px;
+    width: 1519px;
+    background-color: #161616;
+}
+footer h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+}
+footer hr{
+    width: 1320px;
+}
+.footer-details{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
     
 }
-.button-key{
-    height: 64px;
-    width: 252px;
-    border-radius: 5px;
+.footer-details a{
+    color: #B9B9B9;
     text-decoration: none;
 }
-.middle-box{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 50px;
-} */
+.social-links{
+    text-align: center;
+}
+.social-links a{
+    color: white;
+    font-size: 30px;
+}
+/* footer styles end  */
+
+/* media quesries for responsive website layout */
+@media only screen and (max-width: 688px) {
+    body{
+        display: flex;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
