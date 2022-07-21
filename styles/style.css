@@ -224,25 +224,3 @@ footer hr{
     font-size: 30px;
 }
 /* footer styles end  */
-
-/* media quesries for responsive website layout */
-@media only screen and (max-width: 688px) {
-    body{
-        display: flex;
-    }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
